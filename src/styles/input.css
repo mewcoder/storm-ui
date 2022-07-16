@@ -1,0 +1,4 @@
+.st-input {
+  @apply block my-2 h-8 px-2 w-full rounded box-border  shadow border-1 border-gray-300 text-gray-600 hover:border-gray-400 active:border-blue-500 
+  @apply transition duration-150;
+}

@@ -1,0 +1,7 @@
+.st-checkbox {
+  @apply w-4 h-4 text-blue-600 rounded border-gray-300 cursor-pointer;
+  @apply transition duration-150;
+}
+.st-checkbox-label {
+  @apply ml-2 text-blue-600;
+}
