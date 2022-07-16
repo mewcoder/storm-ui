@@ -2,6 +2,6 @@ import { createApp } from "vue";
 
 import App from "./App.vue";
 import "uno.css";
-import "./styles/index.js";
+import "./styles/index";
 
 createApp(App).mount("#app");

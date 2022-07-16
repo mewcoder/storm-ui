@@ -6,7 +6,7 @@ import STButton from "./components/Button.vue";
 <template>
   <HelloWorld msg="Strom UI Demo" />
   <div>
-    <STButton >按钮</STButton>
+    <STButton>按钮</STButton>
     <STButton type="primary">按钮</STButton>
     <STButton type="success">按钮</STButton>
     <STButton type="warning">按钮</STButton>

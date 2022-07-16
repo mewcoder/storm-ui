@@ -3,7 +3,7 @@ import { ref } from "vue";
 defineProps({
   type: {
     type: String,
-    defalut:'default'
+    default:'default'
   }
 });
 </script>
