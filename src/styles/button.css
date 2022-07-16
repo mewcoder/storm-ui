@@ -1,0 +1,26 @@
+.st-btn {
+  @apply px-6 py-2 rounded cursor-pointer shadow border-1  border-transparent hover:bg-opacity-80;
+  @apply transition duration-100;
+}
+.st-btn + .st-btn {
+  @apply ml-2;
+}
+
+.st-btn-default {
+  @apply bg-white border border-gray-300 hover:bg-gray-300;
+}
+.st-btn-primary {
+  @apply bg-blue-500  text-white;
+}
+
+.st-btn-success {
+  @apply bg-green-500 text-white;
+}
+
+.st-btn-warning {
+  @apply bg-orange-500 text-white;
+}
+
+.st-btn-danger {
+  @apply bg-red-500 text-white;
+}

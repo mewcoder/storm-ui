@@ -1,11 +1,7 @@
-import Vue from 'vue';
-import App from './App.vue';
+import { createApp } from "vue";
 
-import './assets/main.css';
-import SButton from './ui/button/';
+import App from "./App.vue";
+import "uno.css";
+import "./styles/index.js";
 
-Vue.use(SButton);
-
-new Vue({
-  render: h => h(App)
-}).$mount('#app');
+createApp(App).mount("#app");

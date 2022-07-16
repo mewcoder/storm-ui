@@ -1,23 +1,13 @@
-import { fileURLToPath } from 'url';
-
-import { defineConfig } from 'vite';
-import legacy from '@vitejs/plugin-legacy';
-import vue2 from '@vitejs/plugin-vue2';
-import vue2Jsx from '@vitejs/plugin-vue2-jsx';
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import unocss from "unocss/vite";
+import { presetUno } from "unocss";
+import transformerDirective from "@unocss/transformer-directives";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue2(),
-    vue2Jsx(),
-    legacy({
-      targets: ['ie >= 11'],
-      additionalLegacyPolyfills: ['regenerator-runtime/runtime']
-    })
+    vue(),
+    unocss({ presets: [presetUno()], transformers: [transformerDirective()] }),
   ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
 });
