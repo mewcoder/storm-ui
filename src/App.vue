@@ -20,8 +20,4 @@ import STSwtich from "./components/Swtich.vue";
   <div class="mt-10">
     <STCheckBox></STCheckBox>
   </div>
-
-   <div class="mt-10">
-    <STSwtich></STSwtich>
-  </div>
 </template>

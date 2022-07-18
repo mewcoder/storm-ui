@@ -1,7 +1,10 @@
 .st-checkbox {
-  @apply w-4 h-4 text-blue-600 rounded border-gray-300 cursor-pointer;
+  @apply cursor-pointer flex items-center select-none;
   @apply transition duration-150;
 }
+.st-checkbox-box {
+  @apply w-4 h-4 text-blue-600 rounded border-gray-300 outline-none;
+}
 .st-checkbox-label {
-  @apply ml-2 text-blue-600;
+  @apply cursor-pointer ml-2 text-blue-600;
 }

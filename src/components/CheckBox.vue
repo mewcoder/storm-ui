@@ -9,8 +9,8 @@ defineProps({
 </script>
 
 <template>
-  <span class="flex items-center">
-    <input id="st-checkbox" type="checkbox" value="" class="st-checkbox" />
+  <span class="st-checkbox">
+    <input id="st-checkbox" class="st-checkbox-box" type="checkbox" value="" />
     <label for="st-checkbox" class="st-checkbox-label">checkbox </label>
   </span>
 </template>
