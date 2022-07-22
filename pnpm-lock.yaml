@@ -1,16 +1,31 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@unocss/transformer-directives': ^0.44.2
-  '@vitejs/plugin-vue': ^3.0.0
-  typescript: ^4.6.4
-  unocss: ^0.44.2
-  vite: ^3.0.0
-  vue: ^3.2.37
-  vue-tsc: ^0.38.4
+importers:
 
-dependencies:
-  vue: 3.2.37
+  .:
+    specifiers:
+      '@strom-ui/components': workspace:*
+      '@strom-ui/theme': workspace:*
+      '@strom-ui/utils': workspace:*
+      '@unocss/transformer-directives': ^0.44.2
+      '@vitejs/plugin-vue': ^3.0.0
+      typescript: ^4.6.4
+      unocss: ^0.44.2
+      vite: ^3.0.0
+      vue: ^3.2.37
+      vue-tsc: ^0.38.4
+    dependencies:
+      '@strom-ui/components': link:packages/components
+      '@strom-ui/theme': link:packages/theme
+      '@strom-ui/utils': link:packages/utils
+      vue: 3.2.37
+    devDependencies:
+      '@unocss/transformer-directives': 0.44.2
+      '@vitejs/plugin-vue': 3.0.0_vite@3.0.0+vue@3.2.37
+      typescript: 4.7.4
+      unocss: 0.44.2_vite@3.0.0
+      vite: 3.0.0
+      vue-tsc: 0.38.5_typescript@4.7.4
 
 devDependencies:
   '@unocss/transformer-directives': 0.44.3

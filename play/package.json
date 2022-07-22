@@ -1,25 +1,19 @@
 {
-  "name": "storm-ui",
+  "name": "play",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "play":"pnpm -C play dev",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@strom-ui/components": "workspace:*",
-    "@strom-ui/theme": "workspace:*",
-    "@strom-ui/utils": "workspace:*",
     "vue": "^3.2.37"
   },
   "devDependencies": {
-    "@unocss/transformer-directives": "^0.44.2",
     "@vitejs/plugin-vue": "^3.0.0",
     "typescript": "^4.6.4",
-    "unocss": "^0.44.2",
     "vite": "^3.0.0",
     "vue-tsc": "^0.38.4"
   }

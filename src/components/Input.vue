@@ -3,11 +3,11 @@ import { ref } from "vue";
 defineProps({
   type: {
     type: String,
-    default:'default'
-  }
+    default: "default",
+  },
 });
 </script>
 
 <template>
-  <input class="st-input"/>
+  <input class="st-input" />
 </template>
