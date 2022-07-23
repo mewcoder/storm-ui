@@ -35,18 +35,19 @@ function createBEM(prefix: string) {
   const bem = (block: string, element: string = "", modefier: string = "") =>
     block && element && modefier ? _bem(prefix, block, element, modefier) : "";
 
-  const is = (name: string, state) => (state ? `is-${name}` : "");
+  const is = (name: string, state: string | boolean) =>
+    state ? `is-${name}` : "";
 
   return { b, e, m, be, bm, em, bem, is };
 }
 
-function createNameSpace(name: string) {
+export function createNameSpace(name: string) {
   const prefix = `${NAMESPACE}-${name}`;
   return createBEM(prefix);
 }
 
 const bem = createNameSpace("icon");
 
-console.log(bem.b('box'))
-console.log(bem.e('box'))
-console.log(bem.m('box'))
+console.log(bem.b("box"));
+console.log(bem.e("box"));
+console.log(bem.m("box"));
